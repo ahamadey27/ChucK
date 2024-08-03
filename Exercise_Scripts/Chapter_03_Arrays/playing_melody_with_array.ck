@@ -7,11 +7,11 @@ SqrOsc s => dac;
 //declare and initiliaze array of MIDI notes
 [57, 57, 64, 64, 66, 66, 64, 62, 62, 61, 61, 59, 59, 57] @=> int a[]; 
 
-//loop for length of array...a.cap method tells total size of array 
+//loop for length of array....cap method tells total size of array 
 for (0 => int i; i < a.cap(); i++)
 {
     //prints index and array note
-    <<< i, a[i] >>>; 
+    <<< i, a[i] >>>;  
 
     //set freq and gain to turn on note
     Std.mtof(a[i]) => s.freq;
