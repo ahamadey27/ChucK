@@ -3,7 +3,7 @@
 SndBuf mySound => dac;
 
 //get file path
-me.dir() => string path; //gets current working directory
+me.dir() => string path; //me.dir() gets current working directory
 
 //sound file we want to play
 "/audio/snare_01.wav" => string filename; 
