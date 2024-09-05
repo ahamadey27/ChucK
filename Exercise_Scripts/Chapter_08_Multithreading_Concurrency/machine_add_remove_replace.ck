@@ -1,5 +1,5 @@
 //Using Machine.add, Machine.remove, and Machine.replace to add, remove, and replace machines in a group
-
+//This is bascially how to using other ChucK scripts to make an arrangement 
 Machine.add(me.dir()+"/concurrency_example.ck") => int conEx;
 2.0 :: second => now; 
 Machine.add(me.dir()+"/concurrent_drum_machine.ck") => int conDrMach;
