@@ -1,8 +1,4 @@
-// Harsh winter wind sound emulation with recording
 
-// Create a WvOut object to record the output
-WvOut wavRec;
-wavRec.wavFilename("harsh_winter_wind.wav"); // Set the filename
 
 // Create a noise generator
 Noise n => BPF bandpass => dac => wavRec;  // Route sound to both dac and wavRec
