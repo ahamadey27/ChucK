@@ -23,7 +23,7 @@ while(true) {
     5000.0 + (100.0 * mod.last()) + (50.0 * mod2.last()) => lowpass.freq;
     
     // Smooth, subtle gain fluctuations for light rain intensity
-    0.1 + (0.03 * mod.last()) + (0.02 * mod2.last()) => g.gain;
+    0.5 + (0.03 * mod.last()) + (0.02 * mod2.last()) => g.gain;
 
     // Short delay to continuously update parameters
     100::ms => now;

@@ -1,7 +1,7 @@
 
 
 // Create a noise generator
-Noise n => BPF bandpass => dac => wavRec;  // Route sound to both dac and wavRec
+Noise n => BPF bandpass => dac 
 
 // Set the frequency of the bandpass filter
 1000.0 => bandpass.freq;
